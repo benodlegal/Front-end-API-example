@@ -1,4 +1,4 @@
-<html>
+<html ng-app="my-app">
     <head>
         <title>BookStore</title>
         <link rel-"stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -18,17 +18,17 @@
                       </div>
                       <div id="navbar" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                          <li class="active"><a href="#/books/add">Add Book</a></li>
+                          <li><a href="#/books/add">Add Book</a></li>
                           
                         </ul>
-                      </div><!--/.nav-collapse -->
+                      </div>
                     </div>
                   </nav>
               
                   <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            
+                            <div ng-view></div>
                         </div>
                     </div>
                   </div><!-- /.container -->
